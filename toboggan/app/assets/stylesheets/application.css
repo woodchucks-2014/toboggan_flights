@@ -11,7 +11,6 @@
  * file per style scope.
  *
  *= require jquery.ui.all
- *= require jqvmap
  *= require_tree .
  *= require_self
  */
