@@ -3,4 +3,7 @@ class Notification < ActiveRecord::Base
   belongs_to :flight
 
   validates :url, presence: true
+
+
+
 end
