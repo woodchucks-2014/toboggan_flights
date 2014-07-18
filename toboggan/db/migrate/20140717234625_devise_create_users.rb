@@ -2,10 +2,14 @@ class DeviseCreateUsers < ActiveRecord::Migration
   def change
     create_table(:users) do |t|
 
-      ## Additional To Devise... 
+      ## Additional To Devise...
       t.string  :name
       t.string  :username
       t.string  :phone_number
+
+      t.float   :latitude
+      t.float   :longitude
+      t.string  :address
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
