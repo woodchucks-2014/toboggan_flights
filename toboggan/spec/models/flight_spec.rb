@@ -1,10 +1,10 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe Flight, :type => :model do
+describe Flight do
 
-  it {should have_many(:users_flights)}
-  it {should have_many(:users).through(:user_flights)}
-
-  it {should validate_numericality_of(:price)}
-
+  it { should belong_to(:user) }
+  it { should validate_presence_of(:beginning_airport) }
+  it { should validate_presence_of(:ending_airport) }
+  it { should validate_presence_of(:search_end) }
+  it { should validate_numericality_of(:price) }
 end

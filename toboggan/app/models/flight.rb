@@ -1,9 +1,10 @@
 class Flight < ActiveRecord::Base
 
-  has_many   :user_flights
-  has_many   :user, through: :user_flights
+  belongs_to  :user
 
+  validates :beginning_airport, presence: true
+  validates :ending_airport, presence: true
+  validates :search_end, presence: true
 
-  validates :price, :numericality => {:greater_than_or_equal_to => 0.01}
-
+  validates :price, numericality: true
 end

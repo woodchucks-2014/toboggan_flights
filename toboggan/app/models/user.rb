@@ -4,9 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many     :user_flights
-  has_many     :users, through: :user_flights
-
+  has_many     :flights
   has_many     :notifications
 
   validates :name, presence: true
@@ -15,9 +13,5 @@ class User < ActiveRecord::Base
                            message: "Wrong Format 000-000-0000"}
                            #/\A\+1\d{10}\z/     0-000-000-0000
 
-
   validates :email, format: { with: Devise.email_regexp}
-
-
-
 end

@@ -1,6 +1,6 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe User, :type => :model do
+describe User, :type => :model do
   it {should have_many(:user_flights)}
   it {should have_many(:flights).through(:user_flights)}
   it {should have_many(:notifications)}
