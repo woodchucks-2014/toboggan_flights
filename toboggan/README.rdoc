@@ -1,3 +1,10 @@
+User should be able to 
++ log in/log out
++ select flight location
++ select flight price
++ receive text message
++ review a route
+
 == README
 
 This README would normally document whatever steps are necessary to get the
