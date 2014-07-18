@@ -27,10 +27,11 @@ ActiveRecord::Schema.define(version: 20140718040232) do
   end
 
   create_table "notifications", force: true do |t|
-    t.string   "notification_type",                 null: false
-    t.boolean  "notified",          default: false
-    t.integer  "user_id",                           null: false
-    t.integer  "flight_id",                         null: false
+    t.string   "type",       default: "text"
+    t.string   "url",                         null: false
+    t.boolean  "notified",   default: false
+    t.integer  "user_id",                     null: false
+    t.integer  "flight_id",                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
