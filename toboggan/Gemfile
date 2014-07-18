@@ -57,9 +57,9 @@ gem 'devise'
 #   5. You can copy Devise views (for customization) to your app by running:
 #        rails g devise:views
 group :test do
-gem 'rspec-rails'
-gem 'capybara'
-gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'shoulda-matchers'
 end
 
 
