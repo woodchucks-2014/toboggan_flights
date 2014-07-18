@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'jquery-ui-rails'
 gem 'devise'
+
+
+gem 'travis'
 # Some setup you must do manually if you haven't yet:
 
 #   1. Ensure you have defined default url options in your environments files. Here
@@ -60,6 +63,10 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'selenium-webdriver', '~> 2.35.1'
+  gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 
 
@@ -74,4 +81,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
