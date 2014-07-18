@@ -2,14 +2,14 @@
   $(document).ready(function() {
     $('#vmap').vectorMap({
         map: 'world_en',
-        backgroundColor: '#333333',
+        backgroundColor: '#72A0C1',
         color: '#ffffff',
         hoverOpacity: 0.7,
         selectedColor: '#666666',
         enableZoom: true,
         showTooltip: true,
         values: sample_data,
-        scaleColors: ['#C8EEFF', '#006491'],
+        scaleColors: ['#E32636', '#C46210'],
         normalizeFunction: 'polynomial'
     });
 

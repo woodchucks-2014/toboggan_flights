@@ -15,8 +15,8 @@
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	background: #292929;
-	color: white;
+	background: white;
+	color: black;
 	font-family: sans-serif, Verdana;
 	font-size: smaller;
 	padding: 3px;
@@ -30,7 +30,7 @@
 	border-radius: 3px;
 	background: #000000;
 	padding: 3px;
-	color: white;
+	color: black;
 	width: 10px;
 	height: 10px;
 	cursor: pointer;
