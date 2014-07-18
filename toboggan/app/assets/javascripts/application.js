@@ -10,10 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require turbolinks
+
 //= require jquery
 //= require jquery.ui.all
-//= require jquery_ujs
-//= require turbolinks
+//= require jquery.vmap
+//= require 'maps/jquery.vmap.world'
+//= require 'data/jquery.vmap.sampledata'
 //= require_tree .
 
