@@ -10,11 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 
-//= require turbolinks
 //= require jquery
-
-//= require jquery_ujs
-//= require turbolinks
+//= require jquery.ui.all
+//= require jquery.vmap
+//= require 'maps/jquery.vmap.world'
+//= require 'data/jquery.vmap.sampledata'
 //= require_tree .
 $(document).ready(function() {
 
@@ -27,31 +27,3 @@ $(document).ready(function() {
 });
 
 
-
-
-// jQuery('#vmap').vectorMap(
-// {
-//     map: 'world_en',
-//     backgroundColor: '#a5bfdd',
-//     borderColor: '#818181',
-//     borderOpacity: 0.25,
-//     borderWidth: 1,
-//     color: '#f4f3f0',
-//     enableZoom: true,
-//     hoverColor: '#c9dfaf',
-//     hoverOpacity: null,
-//     normalizeFunction: 'linear',
-//     scaleColors: ['#b6d6ff', '#005ace'],
-//     selectedColor: '#c9dfaf',
-//     selectedRegion: null,
-//     showTooltip: true,
-//     onRegionClick: function(element, code, region)
-//     {
-//         var message = 'You clicked "'
-//             + region 
-//             + '" which has the code: '
-//             + code.toUpperCase();
-
-//         alert(message);
-//     }
-// });
