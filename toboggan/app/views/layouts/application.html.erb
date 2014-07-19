@@ -2,12 +2,11 @@
 <html>
 <head>
   <title>Toboggan</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" media="screen" href="app.css">
-  <link rel="stylesheet" media="screen" href="layout.css">
-  <link href='http://fonts.googleapis.com/css?family=Syncopate|Oxygen' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 

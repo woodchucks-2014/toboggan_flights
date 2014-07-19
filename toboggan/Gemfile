@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'jquery-ui-rails'
 gem 'devise'
+
+
+gem 'travis'
 # Some setup you must do manually if you haven't yet:
 
 #   1. Ensure you have defined default url options in your environments files. Here
@@ -57,9 +60,13 @@ gem 'devise'
 #   5. You can copy Devise views (for customization) to your app by running:
 #        rails g devise:views
 group :test do
-gem 'rspec-rails'
-gem 'capybara'
-gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'selenium-webdriver', '~> 2.35.1'
+  gem 'database_cleaner'
+  gem 'simplecov', :require => false
 end
 
 
@@ -74,4 +81,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
