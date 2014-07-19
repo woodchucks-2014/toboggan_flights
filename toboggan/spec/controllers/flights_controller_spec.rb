@@ -26,6 +26,7 @@ RSpec.describe FlightsController, :type => :controller do
   end
 
   describe "#update" do 
+
     it "updates the flight with correct params" do 
       put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: 1}
       test_flight.reload
