@@ -19,6 +19,4 @@ feature "User landing on website" do
      end 
   end
 
-
-
 end

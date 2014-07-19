@@ -7,12 +7,16 @@ class FlightsController < ApplicationController
   end
 
   def create
-  	@flight = Flight.create(flight_params)
-  	redirect_to flight_path(@flight)
+  	@flight = Flight.new(flight_params)
+    if @flight.save
+  	  redirect_to flight_path(@flight)
+    else 
+      render :new
+    end
   end
 
   def show
-
+    @flight = Flight.find(params[:id])
   end
 
   private

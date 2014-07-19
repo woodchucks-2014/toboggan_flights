@@ -1,1 +1,13 @@
-<h1>This is an individual flight page</h1>
+<h1>Flight: <%= @flight.id %></h1>
+
+<div id="flight"> 
+	<div class="flight_origin">
+		<%= @flight.beginning_airport %>
+	</div>
+
+	<div class="flight_destination">
+		<%= @flight.ending_airport %>
+	</div>
+
+
+</div>
