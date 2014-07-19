@@ -11,9 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717234625) do
+ActiveRecord::Schema.define(version: 20140718040232) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "flights", force: true do |t|
+    t.string   "beginning_airport"
+    t.string   "ending_airport"
+    t.integer  "user_id"
+    t.datetime "start_vacation"
+    t.datetime "end_vacation"
+    t.datetime "search_end"
+    t.integer  "duration"
+    t.string   "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "notifications", force: true do |t|
+    t.string   "type",       default: "text"
+    t.string   "url",                         null: false
+    t.boolean  "notified",   default: false
+    t.integer  "user_id",                     null: false
+    t.integer  "flight_id",                   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "username"
+    t.string   "phone_number"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -28,7 +60,7 @@ ActiveRecord::Schema.define(version: 20140717234625) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
