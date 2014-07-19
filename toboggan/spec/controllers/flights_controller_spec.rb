@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe FlightsController, :type => :controller do
 
-	# let(:test_flight) {Flight.create(beginning_airport: "JFK", ending_airport: "LGA", search_end: Time.now) }
+  let(:test_flight) { FactoryGirl.create :flight }
 
 	describe "GET #new" do
   	it "gets the create flight form" do
@@ -22,6 +22,16 @@ RSpec.describe FlightsController, :type => :controller do
       expect {
         Flight.create
       }.to change(Flight, :count).by(0)
+    end
+  end
+
+  describe "#update" do 
+    it "updates the flight with correct params" do 
+      p "*"*50
+      p test_flight
+      put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: 1}
+      test_flight.reload
+      expect(test_flight.beginning_airport).to eq("AAA")
     end
   end
 

@@ -23,6 +23,7 @@ class FlightsController < ApplicationController
 
   def edit
     @flight = Flight.find(params[:id])
+    render :edit
   end
 
   def update
