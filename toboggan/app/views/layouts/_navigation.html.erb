@@ -9,7 +9,7 @@
 			<% if session[:user_id] %>
 				account
 			<% else %>
-				log in
+				<%= link_to 'log in', new_user_session_path %>
 			<% end %>
 		</li>
 

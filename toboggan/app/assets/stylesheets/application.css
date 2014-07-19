@@ -30,6 +30,9 @@
 	position: relative;
 }
 
+body a, a:hover, a:visited {
+	color: black;
+}
 
  .nav_hover {
  	background-color: #D3DDE3;
