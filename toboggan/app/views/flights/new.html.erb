@@ -1,20 +1,16 @@
 <%= flash[:notice] %>
-<%= form_for @flight, url: {action: "create"}, html: {id: "create_flight"} do |f| %>
-  <%= f.text_field :beginning_airport %><br>
-  <%= f.text_field :ending_airport %><br>
-  <%= f.date_field :search_end %><br>
-  <%= f.label :price %>
-  <%= f.number_field :price %>
-  <%= f.submit :id => "submit" %>
-<% end %>
 
-	<!-- javascript for slider bar below is in trips.js -->
-	<div id="mapslider" >	
-	<p>
-		<label for="amount">Price Range:</label>
-		<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-	</p>
-	<div id="slider-range"></div>
-	<!-- end of code for slider bar -->
-	<div id="vmap" style="width: 90%; height: 700px;"></div>
-	</div>
+<div id="new_flight">
+	<h1>Fill in the form below to find a flight</h1>
+	<%= form_for @flight, url: {action: "create"}, html: {id: "create_flight"} do |f| %>
+	  <%= f.text_field :beginning_airport, placeholder: "Origin" %><br>
+	  <%= f.text_field :ending_airport, placeholder: "Destination" %><br>
+	  When the search should stop: 
+	  <%= f.date_field :search_end %><br>
+	  <%= f.label :price %>
+	  <%= f.number_field :price %>
+	  <%= f.submit :id => "submit" %>
+	<% end %>
+
+	<div id="vmap" style="width: 50%; height: 400px;"></div>
+</div>

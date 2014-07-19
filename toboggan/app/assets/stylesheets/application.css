@@ -26,6 +26,11 @@
  	background: #F2F8FC;
  }
 
+ body {
+	position: relative;
+}
+
+
  .nav_hover {
  	background-color: #D3DDE3;
  }

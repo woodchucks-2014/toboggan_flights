@@ -4,6 +4,29 @@
 
 
 #create_flight {
+	position: absolute;
+	right: 50px;
+	top: 100px;
+}
+
+#vmap {
+
+	top: 0;
+	left: 50px;
+	display: block;
+	width: 500px; 
+	height: 400px;
+}
+
+
+#new_flight {
+	display: block;
+	width: 1000px;
+	height: 450px;
+	margin: 0 auto;
 	position: relative;
-	margin-top: 10%;
+	top: 100px;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+	text-align: center;
 }
