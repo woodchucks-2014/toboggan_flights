@@ -16,3 +16,4 @@
 //= require 'maps/jquery.vmap.world'
 //= require 'data/jquery.vmap.sampledata'
 //= require_tree .
+
