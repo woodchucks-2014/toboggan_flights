@@ -11,7 +11,7 @@
 // about supported directives.
 
 //= require jquery
-//= require jquery.ui.all
+//= require jquery-ui
 //= require jquery.vmap
 //= require 'maps/jquery.vmap.world'
 //= require 'data/jquery.vmap.sampledata'
