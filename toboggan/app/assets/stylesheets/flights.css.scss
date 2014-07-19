@@ -1,3 +1,47 @@
 // Place all the styles related to the Flights controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#create_flight {
+	position: absolute;
+	right: 150px;
+	top: 100px;
+}
+
+#vmap {
+	top: 0;
+	left: 50px;
+	display: block;
+	width: 500px; 
+	height: 400px;
+}
+
+#create_flight input {
+	width: 150px;
+	text-align: left;
+	height: 20px;
+	line-height: 25px;
+}
+
+
+#new_flight {
+	font-family: 'Raleway', sans-serif;
+	display: block;
+	width: 1000px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+	text-align: center;
+	padding-top: 30px;
+	border-radius: 5px;
+}
+
+#new_flight h1 {
+	font-size: 24px;
+}
+
+

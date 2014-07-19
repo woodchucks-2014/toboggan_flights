@@ -7,8 +7,8 @@ class Flight < ActiveRecord::Base
 
   validates :price, numericality: true
 
-  # def set_duration
-  #   self.duration = end_vacation.yday - start_vacation.yday + (365*(end_vacation.year - start_vacation.year))
-  # end
+	def calculate_search_end
+		self.search_end = 1.months_since(Time.now)
+	end
 
 end
