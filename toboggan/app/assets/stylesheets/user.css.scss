@@ -1,3 +1,24 @@
 // Place all the styles related to the User controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#forms {
+	font-family: 'Raleway', sans-serif;
+	display: block;
+	width: 300px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	border: 1px solid #E0E0E0;
+	text-align: center;
+	padding-top: 30px;
+	border-radius: 5px;
+	z-index:-1;
+}
