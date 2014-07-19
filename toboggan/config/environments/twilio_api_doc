@@ -1,0 +1,19 @@
+THIS IS LITTERALY ALL YOU NEED TO MAKE IT WORK!!!!
+
+
+require 'rubygems' # not necessary with ruby 1.9 but included for completenesstwilio-ruby'
+#uyrwcdtlhre
+accout_sd ='ACc2ca55553fed04a8a5f5d6da96'
+auth_token= '[uthTken]
+
+# et u a ciet o ak tote Twlo RETAPI
+cient=Twilio::REST::Client.ew accont_sid,auth_toen
+
+@clent.account.messages.create({
+  :frm => '+144434529,  :to = 845-594-2698',
+  :body => 'Hello There!',
+})
+
+
+TWILIO_API_KEY = a548aad83f1af5ffe9d217904f4ab5f0
+TWILIO_ACC_SID = ACbc2cca55c5535fedc04a68a5f5d6da96
