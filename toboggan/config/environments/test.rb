@@ -1,6 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  # TWILIO_API_KEY = a548aad83f1af5ffe9d217904f4ab5f0
+  # TWILIO_ACC_SID = ACbc2cca55c5535fedc04a68a5f5d6da96
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
   # your test database is "scratch space" for the test suite and is wiped
