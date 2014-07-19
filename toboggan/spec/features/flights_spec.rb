@@ -8,14 +8,13 @@ feature "User landing on website" do
       expect(page).to have_content "Dodo"
     end
 
-   it "should create a new flight when filling out form", :js => true do 
+   it "should create a new flight when filling out form" do 
 			visit new_flight_path
 			expect {
 				fill_in 'flight_beginning_airport',   with: "Hello world!"
 				fill_in 'flight_ending_airport', with: "Lorem ipsum dolor sit amet"
 				fill_in 'flight_price', with: 50
-				page.execute_script("$('input#flight_search_end')).val('21/12/1980')")
-				click_button "Commit"
+				click_button 'submit'
 			}.to change(Flight, :count).by(1)
      end 
   end
