@@ -1,15 +1,15 @@
 <nav>
 	<div id="logo">dodo flights</div>
-	<ul id="nav_options">
-		<li>
-			<%= link_to 'Set a new alert', root_path %>
+	<ul id="nav_options" class="nav">
+		<li class="nav_items">
+			<%= link_to 'create alert', root_path %>
 		</li>
 
-		<li>
+		<li class="nav_items">
 			<% if session[:user_id] %>
-				Account
+				account
 			<% else %>
-				Log in
+				log in
 			<% end %>
 		</li>
 

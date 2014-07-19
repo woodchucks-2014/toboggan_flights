@@ -23,17 +23,41 @@
  	background: #F2F8FC;
  }
 
+ .nav_hover {
+ 	background-color: #D3DDE3;
+ }
+
  #logo {
  	position: fixed;
  	left: 10px;
  	top: 10px;
- 	font-size: 24px;
+ 	font-size: 30px;
+ 	font-family: 'Raleway', sans-serif;
  }
 
  #nav_options {
  	position: fixed;
  	right: 0;
+ 	font-family: 'Raleway', sans-serif;
+ 	font-size: 18px;
  }
+
+ #nav_options li {
+ 	display: block;
+ 	height: 50px;
+ 	width: 150px;
+ 	float: right;
+ 	border: 1px solid #F0F0F0;
+ 	text-align: center;
+ 	line-height: 50px;
+ }
+
+#nav_options a {
+	text-decoration: none;
+}
+
+
+
 
  /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
