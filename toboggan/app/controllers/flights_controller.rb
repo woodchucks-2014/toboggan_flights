@@ -9,6 +9,7 @@ class FlightsController < ApplicationController
   def create
   	@flight = Flight.new(flight_params)
     if @flight.save
+      flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
     else 
       flash[:notice] = "Oops! Looks like you didn't enter everything correctly. Try again."
@@ -18,6 +19,20 @@ class FlightsController < ApplicationController
 
   def show
     @flight = Flight.find(params[:id])
+  end
+
+  def edit
+    @flight = Flight.find(params[:id])
+  end
+
+  def update
+    @flight = Flight.find(params[:id])
+    if @flight.update(flight_params)
+      redirect_to @flight
+    else
+      flash[:notice] = "Oops! Something didn't save right. Try again."
+      render :edit
+    end
   end
 
   private
