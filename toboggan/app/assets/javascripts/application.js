@@ -11,11 +11,12 @@
 // about supported directives.
 
 //= require jquery
-//= require jquery.ui.all
+//= require jquery-ui
 //= require jquery.vmap
 //= require 'maps/jquery.vmap.world'
 //= require 'data/jquery.vmap.sampledata'
 //= require_tree .
+
 $(document).ready(function() {
 
 	$('.nav_items').hover(function() {
