@@ -27,13 +27,18 @@ RSpec.describe FlightsController, :type => :controller do
 
   describe "#update" do 
     it "updates the flight with correct params" do 
-      p "*"*50
-      p test_flight
       put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: 1}
       test_flight.reload
       expect(test_flight.beginning_airport).to eq("AAA")
     end
+    it "doesn't update the flight with incorrect params" do 
+      put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: "test"}
+      test_flight.reload
+      expect(test_flight.price).to eq(1000000)
+    end
   end
+
+
 
   
 

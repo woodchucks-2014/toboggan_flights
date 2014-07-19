@@ -5,6 +5,6 @@ FactoryGirl.define do
     ending_airport "LAX"
     search_end Time.now
     duration 3
-    price 1_000_000
+    price 1000000
   end
 end
