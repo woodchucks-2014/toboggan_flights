@@ -11,6 +11,7 @@ class FlightsController < ApplicationController
     if @flight.save
   	  redirect_to flight_path(@flight)
     else 
+      flash[:notice] = "Oops! Looks like you didn't enter everything correctly. Try again."
       render :new
     end
   end

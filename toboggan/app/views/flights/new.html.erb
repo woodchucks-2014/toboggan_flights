@@ -1,4 +1,5 @@
 <h1>Dodo flights</h1>
+<%= flash[:notice] %>
 <%= form_for @flight, url: {action: "create"}, html: {class: "create_flight"} do |f| %>
   <%= f.text_field :beginning_airport %><br>
   <%= f.text_field :ending_airport %><br>
