@@ -30,8 +30,9 @@ RSpec.describe UsersController, :type => :controller do
 		end
 
 		  describe 'User Sign Out' do
-		  it 'allows user to sign out'
-			logout(:user)
+		  it 'allows user to sign out' do
+				logout(:user)
+			end	
 	end
 end
 
