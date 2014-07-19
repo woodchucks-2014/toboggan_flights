@@ -4,8 +4,8 @@ class CreateNotifications < ActiveRecord::Migration
       t.string      :type, default: "text"
       t.string      :url, null: false
       t.boolean     :notified, default: false
-      t.belongs_to  :user, null: false
-      t.belongs_to  :flight, null: false
+      t.belongs_to  :user
+      t.belongs_to  :flight
 
       t.timestamps
     end

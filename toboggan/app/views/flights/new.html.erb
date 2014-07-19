@@ -1,2 +1,7 @@
 <h1>Dodo flights</h1>
-<div id="map"></div>
+<%= form_for @flight, url: {action: "create"}, html: {class: "create_flight"} do |f| %>
+  <%= f.text_field :beginning_airport %>
+  <%= f.text_field :ending_airport %>
+  <%= select_date Date.today, prefix: :search_end %>
+  <%= f.submit "Create" %>
+<% end %>
