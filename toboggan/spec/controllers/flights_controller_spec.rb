@@ -24,6 +24,7 @@ RSpec.describe FlightsController, :type => :controller do
       }.to change(Flight, :count).by(0)
     end
   end
+
   
 
 end
