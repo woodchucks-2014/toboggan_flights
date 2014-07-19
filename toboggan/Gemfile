@@ -29,6 +29,8 @@ gem 'jquery-ui-rails'
 gem 'devise'
 gem 'rspec-rails'
 
+gem 'whenever', :require => false
+
 
 gem 'travis'
 # Some setup you must do manually if you haven't yet:
