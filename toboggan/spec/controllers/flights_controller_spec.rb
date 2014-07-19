@@ -9,4 +9,6 @@ RSpec.describe FlightsController, :type => :controller do
   	end
   end
 
+  
+
 end
