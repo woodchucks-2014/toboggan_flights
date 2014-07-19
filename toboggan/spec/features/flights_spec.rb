@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
   feature "it should have a flights page" do
     scenario "visit the page" do
