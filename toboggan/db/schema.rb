@@ -29,12 +29,11 @@ ActiveRecord::Schema.define(version: 20140720195558) do
     t.string   "beginning_airport"
     t.string   "ending_airport"
     t.integer  "user_id"
-    t.string   "phone_number"
     t.datetime "start_vacation"
     t.datetime "end_vacation"
     t.datetime "search_end"
     t.integer  "duration"
-    t.integer  "price"
+    t.string   "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,8 +42,8 @@ ActiveRecord::Schema.define(version: 20140720195558) do
     t.string   "type",       default: "text"
     t.string   "url",                         null: false
     t.boolean  "notified",   default: false
-    t.integer  "user_id"
-    t.integer  "flight_id"
+    t.integer  "user_id",                     null: false
+    t.integer  "flight_id",                   null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,5 +68,8 @@ ActiveRecord::Schema.define(version: 20140720195558) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
