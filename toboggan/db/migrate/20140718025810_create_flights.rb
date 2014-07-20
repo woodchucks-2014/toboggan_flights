@@ -15,7 +15,7 @@ class CreateFlights < ActiveRecord::Migration
       #What is duration?
       t.integer   :duration #3days, 5days, 7days
 
-      t.string    :price
+      t.integer   :price
 
 
       t.timestamps

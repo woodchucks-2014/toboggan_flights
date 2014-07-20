@@ -1,0 +1,19 @@
+<h1>Flight: <%= @flight.id %></h1>
+
+<div class="flash"><%= flash[:notice] %></div>
+
+<div id="flight"> 
+	<div class="flight_origin">
+		<%= @flight.beginning_airport %>
+	</div>
+
+	<div class="flight_destination">
+		<%= @flight.ending_airport %>
+	</div>
+
+	<br>
+	<%= link_to 'Edit this trip', edit_flight_path(@flight) %>	
+
+	<%= link_to 'Create new trip', root_path %>
+
+</div>

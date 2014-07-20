@@ -1,0 +1,15 @@
+<%= flash[:notice] %>
+
+<%= form_for @flight, url: flight_path(@flight), method: :patch do |f| %>
+  <p>
+    <%= f.text_field :beginning_airport %><br>
+    <%= f.text_field :ending_airport %><br>
+    <%= f.date_field :search_end %><br>
+    <%= f.label :price %><br>
+    <%= f.number_field :price %><br>
+  </p>
+    <%= f.submit :id => "submit" %>
+<% end %>
+ 
+<%= link_to 'Back', flight_path(@flight) %>
+

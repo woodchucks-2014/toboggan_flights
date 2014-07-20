@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  root 'flights#new'
+  post "/flights", to: "flights#create"
+  
   resources :flights
+  resources :trips
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
