@@ -1,6 +1,5 @@
 class FlightsController < ApplicationController
-  include AirportsHelper
-  
+
   def index
   end
 
