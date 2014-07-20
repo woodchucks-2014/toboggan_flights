@@ -4,6 +4,7 @@ class CreateAirports < ActiveRecord::Migration
       t.string :country
       t.string :code
       t.float :lat
+      t.float :long
 
       t.timestamps
     end
