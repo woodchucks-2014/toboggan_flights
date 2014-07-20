@@ -46,6 +46,10 @@ body a, a:hover, a:visited {
  	font-family: 'Raleway', sans-serif;
  }
 
+ #logo a {
+ 	text-decoration: none;
+ }
+
  #nav_options {
  	position: fixed;
  	right: 0;
