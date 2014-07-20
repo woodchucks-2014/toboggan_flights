@@ -1,5 +1,5 @@
 every 30.minutes do
-  rake "all"
+  rake "cron:all"
 end
 
 

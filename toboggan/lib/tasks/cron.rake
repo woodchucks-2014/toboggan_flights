@@ -7,11 +7,11 @@ namespace :cron do
   end
 
   desc "Sends a message to the user when conditions are met"
-  task :email => :environment do
+  task :phone => :environment do
     puts "send message"
   end
 
   desc "Does both of the above tasks"
-  task :all => [:data, :email]
+  task :all => [:data, :phone]
 
 end
