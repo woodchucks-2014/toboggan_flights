@@ -11,10 +11,8 @@
         values: sample_data,
         scaleColors: ['#3A6BDE', '#202B44'],
         normalizeFunction: 'polynomial',
-        onRegionClick: function (event, code) {
-          var map = $('#world-map').vectorMap('get', 'mapObject');
-          var name = map.getRegionName(code);
-          console.log(name);
+        onRegionClick: function(element, code, region){
+          $('#flight_ending_airport').val(region);
         }
     });
   });
