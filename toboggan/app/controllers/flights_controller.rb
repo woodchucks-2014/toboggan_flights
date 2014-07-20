@@ -7,18 +7,20 @@ class FlightsController < ApplicationController
   end
 
   def create
-  	@flight = Flight.new
+  	@flight = Flight.new(flight_params)
     if @flight.save
       p "*"*50
-      @user = User.create(user_params)
-      p "8"*20
-      p @user
+      @user = User.new(user_params)
+      @user.email = "guest@guest.com"
+      @user.password = "password"
+      @user.password_confirmation = "password"
+      @user.save
       @user.flights << @flight
       flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
     else 
       flash[:notice] = "Oops! Looks like you didn't enter everything correctly. Try again."
-      render :new
+      render 'root'
     end
   end
 
