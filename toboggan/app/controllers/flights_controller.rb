@@ -9,18 +9,11 @@ class FlightsController < ApplicationController
   def create
   	@flight = Flight.new(flight_params)
     if @flight.save
-      p "*"*50
-      @user = User.new(user_params)
-      @user.email = "guest@guest.com"
-      @user.password = "password"
-      @user.password_confirmation = "password"
-      @user.save
-      @user.flights << @flight
       flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
     else 
       flash[:notice] = "Oops! Looks like you didn't enter everything correctly. Try again."
-      render 'root'
+      render :new    
     end
   end
 
@@ -46,11 +39,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:beginning_airport, :ending_airport, :price)
-  end
-
-  def user_params
-    params.require(:user).permit(:phone_number)
+    params.require(:flight).permit(:beginning_airport, :ending_airport, :price, :phone_number)
   end
 
 end
