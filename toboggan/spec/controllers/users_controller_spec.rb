@@ -34,5 +34,20 @@ RSpec.describe UsersController, :type => :controller do
 				logout(:user)
 			end	
 	end
+
+			describe "User Sign Up" do
+		  it "allows new users to register with an email address and password" do
+		    visit "/users/sign_up"
+
+		    fill_in "Email",                 :with => "email@email.com"
+		    fill_in "Phone number", 				 :with => "123-456-7890"
+		    fill_in "Password",              :with => "ilovegrapes"
+		    fill_in "Password confirmation", :with => "ilovegrapes"
+
+		    click_button "Sign up"
+
+		    page.should have_content("Welcome! You have signed up successfully.")
+		  end
+		end
 end
 
