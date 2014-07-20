@@ -1,4 +1,4 @@
 class UsersController < ApplicationController
 
-  user_params
+  def 
 end
