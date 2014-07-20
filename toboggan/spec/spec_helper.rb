@@ -1,5 +1,8 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
+require 'simplecov'
+SimpleCov.start 'rails'
+
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec-rails'
 require 'rspec/rails'
@@ -24,7 +27,8 @@ RSpec.configure do |config|
   #
   # config.mock_with :mocha
   # config.mock_with :flexmock
-  # config.mock_with :rr
+  # config.mock_with :rr 
+  config.include Devise::TestHelpers, :type => :controller  #not sure if we need this
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
