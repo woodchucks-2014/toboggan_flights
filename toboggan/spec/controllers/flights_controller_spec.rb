@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'rails_helper'
 
-RSpec.describe FlightsController, :type => :controller do
+describe FlightsController do
 
   let(:test_flight) { FactoryGirl.create :flight }
 
@@ -18,21 +18,20 @@ RSpec.describe FlightsController, :type => :controller do
         FactoryGirl.create :flight
       }.to change(Flight, :count).by(1)
   	end
-    it "doesn't save a new flight with invalid params" do 
-      expect {
-        Flight.create
+    it "doesn't save a new flight with invalid params" do    expect {
+        Flight.new
       }.to change(Flight, :count).by(0)
     end
   end
 
-  describe "#update" do 
+  describe "#update" do
 
-    it "updates the flight with correct params" do 
-      put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: 1}
+  it "updates the flight with correct params" do
+     put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: 1}
       test_flight.reload
       expect(test_flight.beginning_airport).to eq("AAA")
     end
-    it "doesn't update the flight with incorrect params" do 
+    it "doesn't update the flight with incorrect params" do
       put :update, id: test_flight.id, flight: {beginning_airport: "AAA", ending_airport: "ZZZ", search_end: Time.now, price: "test"}
       test_flight.reload
       expect(test_flight.price).to eq(1000000)
