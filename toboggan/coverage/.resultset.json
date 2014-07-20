@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/models/user.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/models/user.rb": [
         1,
         null,
         null,
@@ -18,111 +18,105 @@
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/helpers/airports_helper.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/airports_helper.rb": [
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/helpers/application_helper.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/helpers/flights_helper.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/flights_helper.rb": [
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/helpers/trips_helper.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/trips_helper.rb": [
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/helpers/user_helper.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/user_helper.rb": [
         1,
         null,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/controllers/airports_controller.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/airports_controller.rb": [
         1,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/controllers/application_controller.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
-        null
-      ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/controllers/flights_controller.rb": [
         1,
-        1,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
         null,
         1,
         null,
         1,
-        1,
-        null,
+        5,
         null,
         null,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/controllers/notifications_controller.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/flights_controller.rb": [
+        1,
         1,
         null,
         null,
         1,
+        5,
+        null,
         null,
         1,
+        1,
+        1,
+        0,
+        0,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
         0,
         null,
         0,
         0,
         null,
         null,
+        null,
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/controllers/users_controller.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/notifications_controller.rb": [
         1,
+        null,
+        null,
         1,
         null,
+        1,
+        0,
         null,
-        null,
-        null,
+        0,
+        0,
         null,
         null,
         null,
@@ -130,15 +124,21 @@
         null,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/models/airport.rb": [
-        1,
-        null
-      ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/models/flight.rb": [
-        1,
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/users_controller.rb": [
         1,
         1,
         null,
+        null
+      ],
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/models/airport.rb": [
+        1,
+        null
+      ],
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/models/flight.rb": [
+        1,
+        1,
+        1,
+        1,
         null,
         1,
         1,
@@ -151,7 +151,7 @@
         null,
         null
       ],
-      "/Users/JPQ/Desktop/DBC/DBC Library/phase_folder/3rd_phase/phase_3_week_1/5_Fri/toboggan_flights/toboggan/app/models/notification.rb": [
+      "/Users/nataliebaer/toboggan_flights/toboggan/app/models/notification.rb": [
         1,
         1,
         1,
@@ -163,6 +163,6 @@
         null
       ]
     },
-    "timestamp": 1405893483
+    "timestamp": 1405893994
   }
 }
