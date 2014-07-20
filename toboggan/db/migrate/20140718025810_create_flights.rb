@@ -5,6 +5,7 @@ class CreateFlights < ActiveRecord::Migration
       t.string    :beginning_airport
       t.string    :ending_airport
       t.belongs_to :user
+      t.string :phone_number
 
       #What is the date range?
       t.datetime  :start_vacation # deafult next day
