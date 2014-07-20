@@ -7,7 +7,7 @@
 	  <%= f.text_field :ending_airport, placeholder: "Destination (click map)" %><br>
 	  <%= f.number_field :price, placeholder: "Price cap" %><br>
 	  <% unless session[:user_id] %>
-	  	<%= f.fields_for :user do |ff| %>
+	  	<%= fields_for :user do |ff| %>
 	  		<%= ff.text_field :phone_number, placeholder: "Mobile number" %><br>
 	  	<% end %>
 	  <% end %><br>

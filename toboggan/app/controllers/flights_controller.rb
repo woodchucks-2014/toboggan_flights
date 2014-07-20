@@ -7,8 +7,13 @@ class FlightsController < ApplicationController
   end
 
   def create
-  	@flight = Flight.new(flight_params)
+  	@flight = Flight.new
     if @flight.save
+      p "*"*50
+      @user = User.create(user_params)
+      p "8"*20
+      p @user
+      @user.flights << @flight
       flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
     else 
@@ -39,7 +44,11 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:beginning_airport, :ending_airport, :search_end, :price)
+    params.require(:flight).permit(:beginning_airport, :ending_airport, :price)
+  end
+
+  def user_params
+    params.require(:user).permit(:phone_number)
   end
 
 end
