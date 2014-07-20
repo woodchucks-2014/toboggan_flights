@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+input = File.open('airports.dat', File::RDONLY){|f| f.read }
+array = input.lines.map {|x| x}
+p array[1].gsub(/[^0-9A-Za-z,]/, '').split(",")

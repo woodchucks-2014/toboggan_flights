@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140718040232) do
     t.string   "beginning_airport"
     t.string   "ending_airport"
     t.integer  "user_id"
+    t.string   "phone_number"
     t.datetime "start_vacation"
     t.datetime "end_vacation"
     t.datetime "search_end"
