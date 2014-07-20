@@ -19,16 +19,13 @@
     });
   });
 
-  // var x = document.getElementById("flight_ending_airport");
+  // Check for geolocation support
+  if (navigator.geolocation) {
+      // Use method getCurrentPosition to get coordinates
+      navigator.geolocation.getCurrentPosition(function (position) {
+          // Access them accordingly
+          alert(position.coords.latitude + ", " + position.coords.longitude);
+      });
+  }
 
-  // function getLocation() {
-  //     if (navigator.geolocation) {
-  //         navigator.geolocation.getCurrentPosition(function(position) {
-  //           x.innerHTML("yo:" + position.coords.latitude);
-  //     });
-  // function showPosition(position) {
-  //     x.innerHTML = "Latitude: " + position.coords.latitude + 
-  //     "<br>Longitude: " + position.coords.longitude; 
-  // }
-  // getLocation();
 })(jQuery);
