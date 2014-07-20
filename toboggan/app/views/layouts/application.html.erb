@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <title>Toboggan</title>
-  # <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+ <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" %>
   <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" media="screen" href="app.css">
-  <link rel="stylesheet" media="screen" href="layout.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Syncopate|Oxygen' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<%= render 'layouts/navigation' %>
 
 <%= yield %>
 

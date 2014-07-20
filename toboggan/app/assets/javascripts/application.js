@@ -17,3 +17,14 @@
 //= require 'data/jquery.vmap.sampledata'
 //= require_tree .
 
+$(document).ready(function() {
+
+	$('.nav_items').hover(function() {
+				$(this).removeClass().addClass('nav_hover');
+		}, function(){
+				$(this).removeClass().addClass('nav_items');
+		}); 
+
+});
+
+
