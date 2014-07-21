@@ -1,4 +1,5 @@
 class FlightsController < ApplicationController
+
   def index
   end
 
@@ -13,7 +14,7 @@ class FlightsController < ApplicationController
   	  redirect_to flight_path(@flight)
     else 
       flash[:notice] = "Oops! Looks like you didn't enter everything correctly. Try again."
-      render :new
+      render :new    
     end
   end
 
@@ -39,7 +40,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:beginning_airport, :ending_airport, :search_end, :price)
+    params.require(:flight).permit(:beginning_airport, :ending_airport, :price, :phone_number)
   end
 
 end

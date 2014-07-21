@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+
   root 'flights#new'
   post "/flights", to: "flights#create"
+  get "/airports/lookup", to: "airports#lookup"
   
   resources :flights
   resources :trips
