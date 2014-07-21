@@ -17,7 +17,4 @@ class UsersController < ApplicationController
 	    render "new"
 	  end
 	end
-
-
-
 end
