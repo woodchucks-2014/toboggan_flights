@@ -465,7 +465,7 @@
       var path = e.target;
       var code = e.target.id.split('_').pop();
 
-      var regionClick = jQuery.Event('regionClick.jqvmap');
+       var regionClick = jQuery.Event('regionClick.jqvmap');
 
 
       jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].name]);

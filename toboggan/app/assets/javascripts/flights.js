@@ -1,5 +1,4 @@
-(function() {
-  $(document).ready(function() {
+$(document).ready(function() {
     $('#vmap').vectorMap({
         map: 'world_en',
         backgroundColor: '#FFFFFF',
@@ -15,18 +14,31 @@
           $('#flight_ending_airport').val(region);
         }
     });
+
+  var x = document.getElementById("flight_ending_airport");
+
+  // function getLocation(){
+  //     if (navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position){
+  //       {x.innerHTML("yo:" + position.coords.latitude);
+  //       };
+  //     })
+  //     };
+  //       };
+  //     };
+
+  var lattitude;
+  var longitude;
+  function getLocation(){
+    if (navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(function(position){
+         var lattitude = position.coords.latitude;
+         var longitude = position.coords.longitude;
+
+      });
+    }
+  };
+
+
+   getLocation();
+   console.log(lattitude);
   });
-
-  // var x = document.getElementById("flight_ending_airport");
-
-  // function getLocation() {
-  //     if (navigator.geolocation) {
-  //         navigator.geolocation.getCurrentPosition(function(position) {
-  //           x.innerHTML("yo:" + position.coords.latitude);
-  //     });
-  // function showPosition(position) {
-  //     x.innerHTML = "Latitude: " + position.coords.latitude + 
-  //     "<br>Longitude: " + position.coords.longitude; 
-  // }
-  // getLocation();
-})(jQuery);
