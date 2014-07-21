@@ -9,7 +9,6 @@ class FlightsController < ApplicationController
 
   def create
     @beginning_airport = Airport.find_by(name: params[:beginning_flight])
-    puts flight_params
   	@flight = Flight.new(flight_params)
     @flight.beginning_airport = @beginning_airport.code
     if @flight.save
@@ -43,7 +42,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:beginning_airport, :ending_airport, :price, :phone_number)
+    params.require(:flight).permit( :ending_airport, :price, :phone_number)
   end
 
 end
