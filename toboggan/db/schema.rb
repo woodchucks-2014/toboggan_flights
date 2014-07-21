@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20140721062956) do
     t.string   "ending_airport"
     t.integer  "user_id"
     t.string   "phone_number"
-    t.boolean  "on",                default: true
     t.datetime "start_vacation"
     t.datetime "end_vacation"
     t.datetime "search_end"
