@@ -1,17 +1,20 @@
 namespace :cron do
 
+  desc "Gets data from Google Travel API and stores it into the database, then sends a message to the user if the conditions are met"
+  task :all => :environment do
 
-  desc "Gets data from Google Travel API and stores it into the database"
-  task :data => :environment do
-    puts "get data"
-  end
+    puts "Hey dude waiting for the data"
 
-  desc "Sends a message to the user when conditions are met"
-  task :phone => :environment do
-    puts "send message"
-  end
+  #   flights=Data from API
 
-  desc "Does both of the above tasks"
-  task :all => [:data, :phone]
+  #   flights.each do |flight|
+  #     User.all.each do |user|
+  #       if flight.price=<user.flights.price
+  #         NotificationsController.new.send_sms('Hey, a flight from' + flight.start + 'to' + flight.end + 'is available now, for the price of' + flight.price + 'with the airline' + flight.airline,  user.phone_number)
+  #       end
 
+  #     end
+  #   end
+
+   end
 end
