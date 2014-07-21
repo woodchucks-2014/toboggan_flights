@@ -1,7 +1,8 @@
 <%= flash[:notice] %>
 
+
 <div id="new_flight">
-	<h1>Complete the form and be notified if a flight meets your criteria</h1>
+	<h1>Complete the form to be notified if a flight meets your criteria</h1>
 	<%= form_for @flight, url: {action: "create"}, html: {id: "create_flight"} do |f| %>
 	  <%= f.text_field :beginning_airport, placeholder: "Origin airport" %><br>
 	  <%= f.text_field :ending_airport, placeholder: "Destination (click map)" %><br>
@@ -10,7 +11,7 @@
 	  	<%= f.text_field :phone_number, placeholder: "Mobile number" %><br>
 	  <% end %><br>
 	  <%= f.submit :id => "submit", :value => "Off you go" %>
-	<% end %>
+		<% end %>
 	<div id="vmap" style="width: 50%; height: 400px;"></div>
 </div>
 

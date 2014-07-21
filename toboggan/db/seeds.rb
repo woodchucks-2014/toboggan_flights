@@ -15,6 +15,7 @@ end
 
 Flight.create(beginning_airport: "Germany", ending_airport: "France", price: 5000, phone_number: "917-957-7347")
 
+
 autocomplete = { 
  "Aalborg, Denmark Aalborg"=> "AAL",
  "Aalesund, Norway Vigra"=> "AES",
@@ -2907,3 +2908,5 @@ autocomplete = {
 autocomplete.each_pair do |name, code| 
 	Airport.create(name:name, code: code)
 end
+
+
