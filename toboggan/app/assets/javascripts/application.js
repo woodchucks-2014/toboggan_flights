@@ -12,6 +12,7 @@
 
 //= require jquery
 //= require jquery-ui
+//= require jquery_ujs
 //= require jquery.vmap
 //= require 'maps/jquery.vmap.world'
 //= require 'data/jquery.vmap.sampledata'

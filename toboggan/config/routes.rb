@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  devise_for :users
 
-  root 'flights#new'
+  root to: 'flights#new'
   post "/flights", to: "flights#create"
   get "/airports/lookup", to: "airports#lookup"
   
+  devise_for :users
+  # match 'users/sign_out' => "devise/sessions#destroy"
+  # resources :users
+  # devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
   resources :flights
-  resources :trips
+
+  
+
+  
+  
+  # resources :users do
+  #   resources :flights
+  # end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

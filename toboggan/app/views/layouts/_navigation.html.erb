@@ -6,13 +6,15 @@
 		</li>
 
 		<li class="nav_items">
-			<% if session[:user_id] %>
-				<%= link_to 'log out', destroy_user_session_path %>
-				account
+			<% if user_signed_in? %>
+				<%= link_to 'logout', destroy_user_session_url, method: :delete %></li> 
+		<li class="nav_items">		
+				<%= link_to 'my page', flights_path %></li> 
 			<% else %>
 				<%= link_to 'log in', new_user_session_path %>
 			<% end %>
 		</li>
-
 	</ul>
 </nav>
+ <%#= session.inspect %>
+
