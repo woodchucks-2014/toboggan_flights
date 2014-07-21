@@ -1,39 +1,19 @@
 <nav>
 	<div id="logo">dodo flights</div>
-		<ul id="nav_options" class="nav">
-			<li class="nav_items">
-				<%= link_to 'Create Alert', root_path %>
-			</li>
-			<% if current_user %>
-			<li class="nav_items">
-					<%= link_to 'Sign Out', destroy_user_session_path %>
-			</li>
-					<% else %>
-			<li class="nav_items">
-				<%= link_to 'Sign In', new_user_session_path %>
-			</li>
-			<li class="nav_items">
-				<%#= link_to 'Sign Up', new_user_registration %>
-			</li>
+	<ul id="nav_options" class="nav">
+		<li class="nav_items">
+			<%= link_to 'create alert', root_path %>
+		</li>
+
+		<li class="nav_items">
+			<% if user_signed_in? %>
+				<%= link_to 'logout', destroy_user_session_url, method: :delete %></li>
+		<li class="nav_items">
+				<%= link_to 'my page', flights_path %></li>
+			<% else %>
+				<%= link_to 'log in', new_user_session_path %>
 			<% end %>
-		</ul>
-	</div>
+		</li>
+	</ul>
 </nav>
-
-
-<!-- <li class="nav_items">
-			<%#= link_to 'Create Alert', root_path %>
-		</li>
-
-		<%# if current_user %>
-		<li class="nav_items">
-			<%#= link_to "Sign out", destroy_user_session_path, :method => :destroy %>
-		</li>
-			<%# else %>
-		<li class="nav_items">
-			<%#= link_to 'Sign In', new_user_session_path %>
-		</li>
-		<li class="nav_items">
-			<%#= link_to 'Sign Up', new_users_registration %>
-		</li>
-		<%# end %> -->
+ <%#= session.inspect %>
