@@ -1,20 +1,21 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
 
-  resources :flights
-  
-  devise_scope :user do
-    get 'departments/:department_id/sign_in' => 'devise/sessions#new', :as => :department_user_sign_in
-  end
-
-  root 'flights#new'
+  root to: 'flights#new'
   post "/flights", to: "flights#create"
+  
+  devise_for :users
+  # match 'users/sign_out' => "devise/sessions#destroy"
+  # resources :users
+  # devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
+  resources :flights
+
+  
+
+  
   
   # resources :users do
   #   resources :flights
   # end
-  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

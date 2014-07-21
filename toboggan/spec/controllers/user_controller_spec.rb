@@ -3,7 +3,7 @@ require 'capybara'
 include Warden::Test::Helpers
 Warden.test_mode!
 
-RSpec.describe UsersController, :type => :controller do
+RSpec.describe UserController, :type => :controller do
   include Devise::TestHelpers
 
 	  def setup

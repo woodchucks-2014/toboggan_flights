@@ -6,9 +6,8 @@
 		</li>
 
 		<li class="nav_items">
-			<% if current_user %>
-				<% p "sdfsdf" %>
-				<%= link_to 'my page', user_path(current_user)%>
+			<% if user_signed_in? %>
+				<%= link_to 'logout', destroy_user_session_url, method: :delete %></li> 
 			<% else %>
 				<%= link_to 'log in', new_user_session_path %>
 			<% end %>
@@ -16,3 +15,4 @@
 	</ul>
 </nav>
  <%#= session.inspect %>
+
