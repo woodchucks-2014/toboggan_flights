@@ -8,7 +8,9 @@ class FlightsController < ApplicationController
   end
 
   def create
+    @beginning_airport = Airport.find_by(name: params[:beginning_flight])
   	@flight = Flight.new(flight_params)
+    @flight.beginning_airport = @beginning_airport.code
     if @flight.save
       flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
@@ -40,7 +42,7 @@ class FlightsController < ApplicationController
   private
 
   def flight_params
-    params.require(:flight).permit(:beginning_airport, :ending_airport, :price, :phone_number)
+    params.require(:flight).permit( :ending_airport, :price, :phone_number)
   end
 
 end
