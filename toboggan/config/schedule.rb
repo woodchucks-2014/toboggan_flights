@@ -1,4 +1,4 @@
-every 1.minutes do
+every 5.hours do
   rake "cron:all", :environment => :development
 end
 
