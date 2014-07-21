@@ -5,18 +5,18 @@
 			<%= link_to 'Create Alert', root_path %>
 		</li>
 
-		<% if current_user %>
+		<%# if current_user %>
 		<li class="nav_items">
-				<%= link_to 'Sign Out', destroy_user_session_path %>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :destroy %>
 		</li>
-			<% else %>
+			<%# else %>
 		<li class="nav_items">
 			<%= link_to 'Sign In', new_user_session_path %>
 		</li>
 		<li class="nav_items">
-			<%#= link_to 'Sign Up', new_user_registration %>
+			<%#= link_to 'Sign Up', new_users_registration %>
 		</li>
-		<% end %>
+		<%# end %>
 
 	</ul>
 </nav>
