@@ -13,3 +13,4 @@ array.each do |row|
 	Airport.create(country: airport[3], code: airport[4], lat: airport[6].to_f, long: airport[7].to_f)
 end
 
+Flight.create(beginning_airport: "Germany", ending_airport: "France", price: 5000, phone_number: "917-957-7347")

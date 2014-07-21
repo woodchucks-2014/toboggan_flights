@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'flights#new'
   post "/flights", to: "flights#create"
+  get "/airports/lookup", to: "airports#lookup"
   
   devise_for :users
   # match 'users/sign_out' => "devise/sessions#destroy"
