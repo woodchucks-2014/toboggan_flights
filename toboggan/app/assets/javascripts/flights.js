@@ -1,5 +1,4 @@
-(function() {
-  $(document).ready(function() {
+$(document).ready(function() {
     $('#vmap').vectorMap({
         map: 'world_en',
         backgroundColor: '#FFFFFF',
@@ -11,21 +10,36 @@
         values: sample_data,
         scaleColors: ['#3A6BDE', '#202B44'],
         normalizeFunction: 'polynomial',
-        onRegionClick: function (event, code) {
-          var map = $('#world-map').vectorMap('get', 'mapObject');
-          var name = map.getRegionName(code);
-          console.log(name);
+        onRegionClick: function(element, code, region){
+          $('#flight_ending_airport').val(region);
         }
     });
+
+  var x = document.getElementById("flight_ending_airport");
+
+  // function getLocation(){
+  //     if (navigator.geolocation){navigator.geolocation.getCurrentPosition(function(position){
+  //       {x.innerHTML("yo:" + position.coords.latitude);
+  //       };
+  //     })
+  //     };
+  //       };
+  //     };
+
+  var lattitude;
+  var longitude;
+  function getLocation(){
+    if (navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(function(position){
+         var lattitude = position.coords.latitude;
+         var longitude = position.coords.longitude;
+
+      });
+    }
+  };
+
+
+   getLocation();
+   console.log(lattitude);
   });
 
-  // Check for geolocation support
-  if (navigator.geolocation) {
-      // Use method getCurrentPosition to get coordinates
-      navigator.geolocation.getCurrentPosition(function (position) {
-          // Access them accordingly
-          alert(position.coords.latitude + ", " + position.coords.longitude);
-      });
-  }
-
-})(jQuery);

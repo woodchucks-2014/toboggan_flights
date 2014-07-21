@@ -25,6 +25,11 @@ $(document).ready(function() {
 				$(this).removeClass().addClass('nav_items');
 		}); 
 
+
+
+
+	
+
 });
 
 

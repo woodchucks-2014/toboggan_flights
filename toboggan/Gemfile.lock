@@ -110,6 +110,7 @@ GEM
     multipart-post (2.0.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
+    netrc (0.7.7)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -143,6 +144,8 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    rest_client (1.7.3)
+      netrc (~> 0.7.7)
     rspec-core (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.2)
@@ -247,6 +250,7 @@ DEPENDENCIES
   json
   pg
   rails (= 4.1.4)
+  rest_client
   rspec-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

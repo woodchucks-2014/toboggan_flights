@@ -1,15 +1,17 @@
-
 namespace :cron do
 
   desc "Gets data from Google Travel API and stores it into the database, then sends a message to the user if the conditions are met"
   task :all => :environment do
 
-
+    require 'net/http'
+    require 'json'
+    require 'rest_client'
+    require 'open-uri'
 
     require 'dotenv'
     Dotenv.load
 
-    uri = 'https://www.googleapis.com/qpxExpress/v1/trips/search?'+ ENV['API_KEY']
+
     trips = Flight.all
     trips.each do |trip|
       p "in the trips loop"
@@ -35,6 +37,7 @@ namespace :cron do
 
    def find_flights(template)
       flights = []
+      uri = 'https://www.googleapis.com/qpxExpress/v1/trips/search?'+ ENV['API_KEY']
       response = JSON.parse(RestClient.post uri, template, :content_type => :json, :accept => :json )
       response["trips"]["tripOption"].each do |option|
         flights << { option["pricing"][0]["saleTotal"][3..-1].to_f => option["slice"][0]["segment"][0]["flight"]["carrier"] }
