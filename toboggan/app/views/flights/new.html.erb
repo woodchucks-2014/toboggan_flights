@@ -7,10 +7,8 @@
 	  <%= f.text_field :beginning_airport, placeholder: "Origin airport" %><br>
 	  <%= f.text_field :ending_airport, placeholder: "Destination (click map)" %><br>
 	  <%= f.number_field :price, placeholder: "Price cap" %><br>
-	  <% unless current_user %>
-	  	<%= f.fields_for :user do |ff| %>
-	  		<%= ff.text_field :phone_number, placeholder: "Mobile number" %><br>
-	  	<% end %>
+	  <% unless session[:user_id] %>
+	  	<%= f.text_field :phone_number, placeholder: "Mobile number" %><br>
 	  <% end %><br>
 	  <%= f.submit :id => "submit", :value => "Off you go" %>
 		<% end %>
