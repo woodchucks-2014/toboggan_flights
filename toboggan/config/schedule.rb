@@ -1,5 +1,5 @@
 every 1.minutes do
-  rake "cron:all"
+  rake "cron:all", :environment => :development
 end
 
 
