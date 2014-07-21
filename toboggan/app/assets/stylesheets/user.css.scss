@@ -23,11 +23,10 @@ input {
 }
 
 
-#forms {
+form {
 	font-family: 'Raleway', sans-serif;
-	display: block;
-	width: 300px;
-	height: 400px;
+	width: 1000px;
+	height: 450px;
 	margin: 0 auto;
 	position: relative;
 	top: 100px;
@@ -36,6 +35,6 @@ input {
 	text-align: center;
 	padding-top: 30px;
 	border-radius: 5px;
-	z-index:-1;
+
 }
 
