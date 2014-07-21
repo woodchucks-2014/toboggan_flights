@@ -8,7 +8,10 @@ class FlightsController < ApplicationController
   end
 
   def create
+    @beginning_airport = Airport.find_by(name: params[:beginning_flight])
+    puts flight_params
   	@flight = Flight.new(flight_params)
+    @flight.beginning_airport = @beginning_airport.code
     if @flight.save
       flash[:notice] = "Success! You're one step closer to adventure."
   	  redirect_to flight_path(@flight)
