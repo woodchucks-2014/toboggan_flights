@@ -24,6 +24,7 @@ class NotificationsController < ApplicationController
 
     twilio_token = ENV["TWILIO_API_KEY"]
     twilio_sid = ENV["TWILIO_ACC_SID"]
+    real_phone_number = "+1" + phone_number.delete("-")
     @client = Twilio::REST::Client.new twilio_sid, twilio_token
 
     @client.account.messages.create(

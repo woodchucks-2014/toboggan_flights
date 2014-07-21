@@ -1,4 +1,4 @@
-every 30.minutes do
+every 1.minutes do
   rake "cron:all"
 end
 
