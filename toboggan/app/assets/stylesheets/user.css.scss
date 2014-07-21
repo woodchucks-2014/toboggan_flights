@@ -22,11 +22,16 @@ input {
     margin: 0 0 10px 0;
 }
 
+input#submit { 
+	display: inline-block; height: 35px; 
+	color: #222222;
+}
 
-form {
+#forms {
 	font-family: 'Raleway', sans-serif;
-	width: 1000px;
-	height: 450px;
+	display: block;
+	width: 300px;
+	height: 400px;
 	margin: 0 auto;
 	position: relative;
 	top: 100px;

@@ -37,6 +37,8 @@
 
   $.fn.vectorMap = function (options) {
 
+
+
     var defaultParams = {
       map: 'world_en',
       backgroundColor: '#a5bfdd',
@@ -463,8 +465,11 @@
       var path = e.target;
       var code = e.target.id.split('_').pop();
 
+       var regionClick = jQuery.Event('regionClick.jqvmap');
+
+
       jQuery(params.container).trigger('regionClick.jqvmap', [code, mapData.pathes[code].name]);
-      if (!regionClickEvent.isDefaultPrevented()) {
+      if (!regionClick.isDefaultPrevented()) {
         if (map.selectedRegions.indexOf(code) !== -1) {
           map.deselect(code, path);
         } else {
