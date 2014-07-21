@@ -24,6 +24,7 @@
  	position: fixed;
  	top: 0;
  	background: #F2F8FC;
+ 	z-index:4
  }
 
  body {
