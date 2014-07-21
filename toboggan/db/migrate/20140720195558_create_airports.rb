@@ -3,6 +3,8 @@ class CreateAirports < ActiveRecord::Migration
     create_table :airports do |t|
       t.string :country
       t.string :code
+
+
       t.float :lat
       t.float :long
 

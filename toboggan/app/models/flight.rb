@@ -22,7 +22,6 @@ class Flight < ActiveRecord::Base
 
   def lookup_airport(country)
     airports = Airport.where(country: country)
-    p airports.size
     return airports.first.code if airports.size == 1
     codes = airports.map { |airport| airport.code if airport.code.size > 1 }
     codes.compact.sample
