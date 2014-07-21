@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/models/user.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/models/user.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
         null,
         null,
@@ -22,31 +18,12 @@
         1,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/helpers/airports_helper.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/airports_helper.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/helpers/flights_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/helpers/trips_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/helpers/user_helper.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/application_helper.rb": [
         1,
         null
@@ -60,45 +37,22 @@
         null
       ],
       "/Users/nataliebaer/toboggan_flights/toboggan/app/helpers/user_helper.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/controllers/airports_controller.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/airports_controller.rb": [
         1,
+        null,
+        null,
         null
       ],
       "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/application_controller.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/controllers/application_controller.rb": [
-        1,
-<<<<<<< HEAD
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/controllers/flights_controller.rb": [
-        1,
-        null,
         1,
         null,
         null,
         1,
-        4,
-        null,
-=======
         1,
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         null,
         1,
         null,
@@ -110,6 +64,7 @@
       ],
       "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/flights_controller.rb": [
         1,
+        null,
         1,
         null,
         null,
@@ -118,26 +73,7 @@
         null,
         null,
         1,
-        1,
-        1,
         0,
-        0,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
         0,
         0,
         0,
@@ -148,33 +84,65 @@
         null,
         null,
         1,
+        0,
+        null,
         null,
         1,
-<<<<<<< HEAD
-        3,
-=======
+        0,
+        0,
+        null,
+        null,
         1,
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
+        2,
+        2,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
         null,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/controllers/notifications_controller.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/notifications_controller.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         null,
         1,
         null,
         1,
-        0,
+        null,
+        1,
         null,
         0,
         0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -182,31 +150,18 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/controllers/users_controller.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/controllers/users_controller.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
         1,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/models/airport.rb": [
-        1,
-        null
-      ],
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/models/flight.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/models/airport.rb": [
         1,
         null
       ],
       "/Users/nataliebaer/toboggan_flights/toboggan/app/models/flight.rb": [
         1,
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
-        1,
         1,
         1,
         1,
@@ -215,57 +170,39 @@
         null,
         1,
         1,
-<<<<<<< HEAD
         1,
         1,
         null,
         null,
-=======
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
-        5,
+        4,
         null,
         null,
         1,
-        5,
-        5,
+        4,
+        4,
         null,
-<<<<<<< HEAD
         null,
         1,
-        10,
-        10,
-        10,
-        10,
-        10,
-=======
-        1,
-        0,
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
+        8,
+        8,
+        8,
+        8,
         null,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/adrian/workspace/DBC/adriansoghoian.github.io/phase-3-guide/projects/week1/toboggan_flights/toboggan/app/models/notification.rb": [
-=======
       "/Users/nataliebaer/toboggan_flights/toboggan/app/models/notification.rb": [
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
         1,
         1,
         1,
         null,
         1,
-        null,
         null,
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1405898963
-=======
-    "timestamp": 1405893994
->>>>>>> 615573b921f2b389e04824abb149f18dcffe7546
+    "timestamp": 1405923638
   }
 }
